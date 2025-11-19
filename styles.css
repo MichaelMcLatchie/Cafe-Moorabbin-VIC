@@ -1,0 +1,338 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdf6f0;
+    color: #2b1f1f;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background: #2b1f1f;
+    padding: 1.2rem 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.navbar-brand {
+    color: #a0d2a0;
+    font-size: 2rem;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.navbar-brand:hover { color: #ffffff; }
+
+.nav-link {
+    color: #fdf6f0;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #a0d2a0;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after { width: 100%; }
+.nav-link:hover { color: #a0d2a0; }
+.nav-link.active { font-weight: 700; color: #a0d2a0; }
+
+.hero {
+    position: relative;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(65%) contrast(1.1);
+    transition: transform 0.5s ease;
+}
+
+.hero-overlay {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+    padding: 0 2rem;
+}
+
+.hero h1 {
+    font-size: 3.6rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: #a0d2a0;
+    color: #ffffff;
+    border: none;
+    border-radius: 14px;
+    padding: 0.8rem 1.8rem;
+    font-weight: 600;
+    box-shadow: 0 6px 20px rgba(160,210,160,0.6);
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(160,210,160,0.7);
+}
+
+.btn-outline-primary {
+    border: 2px solid #a0d2a0;
+    color: #2b1f1f;
+    border-radius: 14px;
+    padding: 0.7rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-outline-primary:hover {
+    background-color: #a0d2a0;
+    color: #ffffff;
+}
+
+section { padding: 5rem 0; }
+
+.card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    padding: 1rem;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+    height: 230px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+}
+
+h2, h3 {
+    color: #2b1f1f;
+    font-weight: 700;
+}
+
+h4 { font-size: 1.5rem; margin-bottom: 0.8rem; }
+
+p { margin-bottom: 1rem; }
+
+footer {
+    background-color: #2b1f1f;
+    color: #ffffff;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: 0 -4px 25px rgba(0,0,0,0.15);
+}
+
+footer a {
+    color: #c7d5a0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover { color: #ffffff; }
+
+@media (max-width: 992px) {
+    .hero h1 { font-size: 3rem; }
+    .hero p { font-size: 1.2rem; }
+}
+
+@media (max-width: 768px) {
+    section { padding: 3rem 1rem; }
+    .card-img-top { height: 200px; }
+}
+
+.contact {
+    background: url('images/contact.webp') center/cover no-repeat;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(60,47,47,0.3);
+}
+
+.contact .container { 
+    position: relative; z-index: 2; 
+    color: #ffffff;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+}
+
+.textcolour { 
+    color:white; font-size: 2.2rem; 
+}
+
+.menu { 
+    padding-top: 10vh !important; padding-bottom: 15vh !important; font-size: 1.5rem; 
+}
+
+.menu h2, .menu h3 {
+    font-size: 70px; 
+}
+.menu h4 { 
+    font-size: 40px; 
+}
+
+.menu {
+  background: #f8f3e7;
+  padding: 5rem 0;
+}
+
+.menu h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2b1f1f;
+  margin-bottom: 3rem;
+}
+
+.menu h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #2b1f1f;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  font-size: 1.1rem;
+  color: #2b1f1f;
+  border-bottom: 1px solid #d6cbbf;
+  transition: background 0.2s;
+}
+
+.menu ul li:hover {
+  background: rgba(160,210,160,0.35);
+  border-radius: 8px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.menu-gallery {
+  background: #ffffff;
+  padding: 5rem 0;
+}
+
+.menu-gallery .card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-gallery .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-gallery .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+footer {
+  background: #2b1f1f;
+  color: #ffffff;
+}
+
+footer h5 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #c7d5a0;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.contact {
+    background: url('images/contact.webp') center/cover no-repeat;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(60,47,47,0.3), rgba(60,47,47,0.3));
+    z-index: 1;
+}
+
+.contact h1, .contact h2, .contact h3, .contact p {
+    color: #ffffff;
+}
+
+.contact .btn-primary {
+    background-color: #a0d2a0;
+    color: #ffffff;
+    border: none;
+    border-radius: 14px;
+    padding: 0.8rem 1.8rem;
+    font-weight: 600;
+    box-shadow: 0 6px 20px rgba(160,210,160,0.6);
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.contact .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(160,210,160,0.7);
+}

@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://michaelmclatchie.github.io/Cafe-Moorabbin-VIC/sitemap1.xml

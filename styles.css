@@ -322,13 +322,13 @@ footer a:hover {
 }
 
 .contact .btn-primary {
-    background-color: #a0d2a0;
+    background-color: #283041;
     color: #ffffff;
     border: none;
     border-radius: 14px;
     padding: 0.8rem 1.8rem;
     font-weight: 600;
-    box-shadow: 0 6px 20px rgba(160,210,160,0.6);
+    box-shadow: 0 6px 20px rgba(44, 58, 44, 0.6);
     transition: transform 0.2s, box-shadow 0.3s;
 }
 
